@@ -39,8 +39,8 @@ class DeepSeekMCPClient:
         self.exit_stack = AsyncExitStack()
         # 初始化 DeepSeek API 客户端
         self.llm_client = OpenAI(
-            api_key=os.getenv("API_KEY"), # 从环境变量中获取 API 密钥
-            base_url=os.getenv("BASE_URL") # 从环境变量中获取 API 基础 URL
+            api_key=os.getenv("DEEPSEEK_API_KEY"), # 从环境变量中获取 API 密钥
+            base_url=os.getenv("DEEPSEEK_API_BASE") # 从环境变量中获取 API 基础 URL
         )
         # 从环境变量获取模型名称
         self.model = os.getenv("MODEL")

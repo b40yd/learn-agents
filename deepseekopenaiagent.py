@@ -36,9 +36,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # 设置DeepSeek API密钥
-API_KEY = os.getenv("API_KEY")
+API_KEY = os.getenv("DEEPSEEK_API_KEY")
 # 设置DeepSeek API基础URL
-BASE_URL = os.getenv("BASE_URL")
+BASE_URL = os.getenv("DEEPSEEK_API_BASE")
 # 设置DeepSeek API模型名称
 MODEL_NAME = os.getenv("MODEL")
 
