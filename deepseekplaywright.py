@@ -36,7 +36,7 @@ set_tracing_disabled(True)
 # 从环境变量中读取这些值
 API_KEY = os.getenv("DEEPSEEK_API_KEY") # 从环境变量中读取API_KEY,用于DeepSeek API 的认证
 BASE_URL = os.getenv("DEEPSEEK_API_BASE") # 从环境变量中读取BASE_URL,用于DeepSeek API 的地址
-MODEL_NAME = os.getenv("MODEL_NAME") # 从环境变量中读取MODEL_NAME,用于DeepSeek API 的模型名称
+MODEL_NAME = os.getenv("MODEL") # 从环境变量中读取MODEL_NAME,用于DeepSeek API 的模型名称
 
 # 验证必须的配置是否存在
 if not API_KEY:
